@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#define LEN 5
 
 struct node {
     int val;
@@ -14,9 +15,21 @@ void printList(Node*);
 int length(int []);
 
 int main(void) {
-    int array[5] = {1,2,3,4,5};
-    Node* head = createList(array);
+    int array[LEN] = {1,2,3,4,5};
+    //Node* head = createList(array);
+    Node* head;
+    Node* neck;
+    Node* tip;
+    head->val = 1; 
+    head->nextptr = neck;
+    neck->val = 2; 
+    neck->nextptr = tip;
+    tip->val = 3;
+    tip->nextptr = NULL; 
+    
+    printf("%d\n", neck->val);
     printList(head);
+    printf("%d\n", 5);
     return(0);
 }
 // Function that returns the pointer of the newly, created node
@@ -42,16 +55,9 @@ Node* appendNode(Node* addedNode, Node* headList) {
     return copy;
 }
 
-// Function to show that the two above functions work
-void printList(Node* listStart) {
-    while (listStart->nextptr != NULL) {
-        printf("%d\n", listStart->val);
-    }
-}
-
 // Function that creates a linked list from an array input of integers and number of nodes wanted
 Node* createList(int a[]) {
-    int len = length(a);
+    int len = LEN;
     Node* header = createNode(a[0]);
     int i;
 
@@ -67,8 +73,16 @@ Node* createList(int a[]) {
 int length(int a[]) {
     int i = 0;
 
-    while (a[i] != NULL) {
+    while (a[i] < 100) {
         i++;
     }
     return(i + 1);
+}
+
+// Function that prints out the linked list
+void printList(Node* listStart) {
+    while (listStart->nextptr != NULL) {
+        printf("%d\n", listStart->val);
+        listStart = listStart->nextptr;
+    }
 }
