@@ -7,5 +7,5 @@ def createNode():
     loginfo("Exit now")
 
 if __name__ == "__main__":
-    createNode()
+    new_func(createNode)
     print("We made this work")
