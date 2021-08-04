@@ -1,3 +1,6 @@
+/*** This code is the basic stuff to create a linkedlist. This code can be intergrated by having the larger piece of code store all necessary values in a vector.
+     At that point, we will use makeLinkedList(vector<int>) and return the linkedlist***/
+
 #include <iostream>
 #include <stdlib.h>
 #include <cstdlib>
@@ -14,6 +17,7 @@ struct Point {
 // Change the name of the data type
 typedef struct Point node;
 
+// Function declarations
 node* createNode(int);
 node* appendNode(node*, node*);
 node* makeLinkedList(vector<int>);
@@ -23,13 +27,12 @@ void printer(node*);
 int main(void) {
     vector<int> v1;
     node* header;
-    v1 = {1, 3, 6, 10};
+    v1 = {1, 3, 6, 10, 5, 709, -3, -2739};
     header = makeLinkedList(v1);
     printer(header);
     
     return 0;
 }
-
 
 // Function to create a node (this function works)
 node* createNode(int value) {
