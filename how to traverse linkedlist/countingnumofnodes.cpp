@@ -27,7 +27,7 @@ void printer(node*);
 int main(void) {
     vector<int> v1;
     node* header;
-    v1 = {1, 3, 6, 10, 5, 709, -3, -2739};
+    v1 = {1,2,5,6};
     header = makeLinkedList(v1);
     printer(header);
     
@@ -46,16 +46,14 @@ node* createNode(int value) {
 // Function that can add a node to an existing node (this function works)
 node* appendNode(node* head, node* newNode) {
     node* temp = head;
-
     while (temp->next != NULL) {
         temp = temp->next;
     }
     temp->next = newNode;
-
     return(head);   
 }
 
-// Function that will create a linked list, it uses a vector of integers
+// Function that will create a linked list, it uses a vector of integers (this function works)
 node* makeLinkedList(vector<int> values) {
     node* head = createNode(values[0]);
     node* temp;
@@ -64,9 +62,8 @@ node* makeLinkedList(vector<int> values) {
     while (i < length) {
         temp = createNode(values[i]);
         head = appendNode(head, temp);
-        i += 1;
+        i++;
     }
-
     return(head);
 }
 
