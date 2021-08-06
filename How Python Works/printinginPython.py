@@ -27,5 +27,6 @@ string_2 = "concatenate two strings together"
 print(string_1 + string_2)
 
 # The str() function is necessary to concatenate numbers
-string_1 = "My age is "
+string_1 = "This is how to concatenate numbers to a string"
+string_2 = "My age is "
 print(string_1 + str(21))
