@@ -23,7 +23,6 @@ node* appendNode(node*, node*);
 node* makeLinkedList(vector<int>);
 void printer(node*);
 
-
 int main(void) {
     vector<int> v1;
     node* header;
