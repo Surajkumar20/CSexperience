@@ -1,0 +1,4 @@
+	XXXX NNNNN		CreditHours		Grade
+
+	YYYY MMMMM		CrediHours		Grade			
+							
