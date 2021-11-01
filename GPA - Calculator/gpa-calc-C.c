@@ -13,14 +13,13 @@ int main(void) {
   qnc[0] = 0;
   qnc[1] = qnc[0];
 
-  fp = fopen("C:\\Users\\Surajkmar\\Documents\\GPA.txt","r");
+  fp = fopen("GPA.txt","r");
   calc(fp,qnc);
   fclose(fp);
   GPA = qnc[0] / qnc[1];
-  printf("\nGPA: %0.2f\n",GPA);
+  printf("GPA: %0.2f\n",GPA);
   printf("Quality hours: %0.2f\n", qnc[0]);
   printf("Credit hours: %0.2f\n", qnc[1]);
-  fclose(fp);
   return(0);
 }
 
