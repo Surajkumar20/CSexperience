@@ -1,0 +1,8 @@
+prefix=/home/srajarat/Desktop/Coding/CSexperience/ROS/Personal_Attempt/catkin_ws/install
+
+Name: message_system
+Description: Description of message_system
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
