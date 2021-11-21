@@ -15,7 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 catkin_install_python(PROGRAMS src/pub.py src/listen.py
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+  DESTINATION ~/Desktop/Coding/CSexperience/ROS/Personal_Attempt/catkin_ws/src/message_system/bin
 )
 
 ## Uncomment this if the package has a setup.py. This macro ensures
