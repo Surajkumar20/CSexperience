@@ -17,22 +17,28 @@ int length(int []);
 int main(void) {
     int array[LEN] = {1,2,3,4,5};
     //Node* head = createList(array);
-    Node* head;
-    Node* neck;
-    Node* tip;
-    head->val = 1; 
+    /*Node* head = createNode(1);
+    Node* neck = createNode(7);
+    Node* tip = createNode(5);
+    Node* end = createNode(56);
     head->nextptr = neck;
-    neck->val = 2; 
     neck->nextptr = tip;
-    tip->val = 3;
-    tip->nextptr = NULL; 
+    //head = appendNode(neck, head);
+    //head = appendNode(tip, head);
+    //head = appendNode(head, tip);
     
-    printf("%d\n", neck->val);
+    //printf("%d\n", head->val);
     printList(head);
-    printf("%d\n", 5);
+    //printf("%d\n", 5);
     return(0);
+    */
+   Node* neck = createNode(1);
+   Node* head = createNode(2);
+   head = appendNode(head, neck);
+   return(0);
+
 }
-// Function that returns the pointer of the newly, created node
+// Function that returns the pointer of the newly, created node (works)
 Node* createNode(int a) {
     Node* nodee;
     nodee = (Node*) malloc(sizeof(Node));
@@ -41,9 +47,10 @@ Node* createNode(int a) {
     return(nodee);
 }
 
-// Function that appends a node to the end of a singly linked list
+/*// Function that appends a node to the end of a singly linked list
 Node* appendNode(Node* addedNode, Node* headList) {
-    Node* copy = headList;
+    Node* copy = createNode(1);
+    copy->nextptr = headList;
     
     //Traverse through the linked list
     while (headList != NULL) {
@@ -52,6 +59,26 @@ Node* appendNode(Node* addedNode, Node* headList) {
 
     // Set the final node to point to the addedNode
     headList->nextptr = addedNode;
+    copy = copy->nextptr;
+    return copy;
+}*/
+
+Node* appendNode(Node* headNode, Node* newNode) {
+    Node* copy = createNode(1);
+    copy->nextptr = headNode;
+    printf("%d", copy->val);
+    
+    //Traverse the linked list
+    while (headNode != NULL) {
+        printf("%d\n", headNode->val);
+        headNode = headNode->nextptr;
+    }
+
+    // Set final boi in the linkedlist to point to the new node
+    headNode->nextptr = newNode;
+    
+    //Go from the copy to the headNode
+    copy = copy->nextptr;
     return copy;
 }
 
@@ -79,10 +106,12 @@ int length(int a[]) {
     return(i + 1);
 }
 
-// Function that prints out the linked list
+// Function that prints out the linked list (works)
 void printList(Node* listStart) {
-    while (listStart->nextptr != NULL) {
+    while (listStart != NULL) {
         printf("%d\n", listStart->val);
         listStart = listStart->nextptr;
     }
 }
+
+// Right now the problem is with appendNode
