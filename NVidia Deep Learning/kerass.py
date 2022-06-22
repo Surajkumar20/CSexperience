@@ -1,0 +1,1 @@
+ok. # Create inputs with correct shape inputs = keras.Input(shape=(224, 224, 3)) x = base_model(inputs, training=False) # Add pooling layer or flatten layer x = keras.layers.GlobalAveragePooling2D()(x) # Add final dense layer outputs = keras.layers.Dense(1, activation = 'softmax')(x) # Combine inputs and outputs to create model model = keras.Model(inputs, outputs)
