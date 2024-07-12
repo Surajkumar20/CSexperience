@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/PLOT.dir/src/pubsub.c.o CMakeFiles/PLOT.dir/src/plotter.c.o  -o ../bin/PLOT 

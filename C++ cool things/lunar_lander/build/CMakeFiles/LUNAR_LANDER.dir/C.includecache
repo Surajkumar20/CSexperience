@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/Quaternion/Quaternion.h
+stdbool.h
+-
+stdint.h
+-
+stdio.h
+-
+math.h
+-
+
+/home/gic/Projects/lunar_lander/src/engine.c
+stdio.h
+-
+Quaternion.h
+-
+engine.h
+/home/gic/Projects/lunar_lander/src/engine.h
+plotter.h
+/home/gic/Projects/lunar_lander/src/plotter.h
+
+/home/gic/Projects/lunar_lander/src/engine.h
+
+/home/gic/Projects/lunar_lander/src/plotter.h
+fcntl.h
+-
+unistd.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+
+/home/gic/Projects/lunar_lander/src/pubsub.c
+stdio.h
+-
+plotter.h
+/home/gic/Projects/lunar_lander/src/plotter.h
+

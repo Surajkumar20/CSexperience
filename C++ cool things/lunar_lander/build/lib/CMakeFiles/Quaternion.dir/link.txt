@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libQuaternion.so -o libQuaternion.so CMakeFiles/Quaternion.dir/Quaternion/Quaternion.c.o 

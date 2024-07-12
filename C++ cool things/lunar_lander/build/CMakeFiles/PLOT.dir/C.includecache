@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gic/Projects/lunar_lander/src/plotter.c
+stdio.h
+-
+plotter.h
+/home/gic/Projects/lunar_lander/src/plotter.h
+
+/home/gic/Projects/lunar_lander/src/plotter.h
+fcntl.h
+-
+unistd.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+
+/home/gic/Projects/lunar_lander/src/pubsub.c
+stdio.h
+-
+plotter.h
+/home/gic/Projects/lunar_lander/src/plotter.h
+
