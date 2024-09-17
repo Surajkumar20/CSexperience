@@ -1,81 +1,41 @@
-CHM 11500       4       A
+BIO 10100       4       B
 
-COM 11400       3       B
+HIST 21000      3       C+
 
-ENGR 13100      2       B-
+CHE 20200       2       A
 
-MA 16600        4       A-
+MATH 17100      4       B+
 
-ME 29700        1       W
+PHYS 20000      1       W
 
-CS 15900        3       C
+CS 18000        3       B-
 
-ENGL 10600      4       A
+ENGL 20300      4       B+
 
-ENGR 13200      2       B+
+ART 11000       2       C
 
-MA 26100        4       B+
+MATH 26200      4       A
 
-PHYS 27200      4       B-
+CHEM 30100      4       B
 
-CGT 16300       2       A-
+ARCH 15000      2       A-
 
-ECON 25200      3       B
+PSY 23000       3       B
 
-MA 26600        3       B+
+STAT 21000      3       A
 
-ME 20000        3       D+
+ME 10000        3       A-
 
-ME 27000        3       C-
+ME 28000        3       A+
 
-MUS 25000       3       A
+MUS 10100       3       C
 
-ECE 20001       3       P
+ECE 22000       3       B+
 
-ECE 20007       1       A
+ME 30000        3       C
 
-MA 26500        3       B+
+MSE 25000       3       B
 
-ME 26300        3       A-
+SOC 15000       3       A-
 
-ME 27400        3       C-
-
-ME 29000        1       A
-
-ENGR 37920      2       A
-
-MA 30300        3       A
-
-ME 30900        4       B+
-
-ME 32300        3       B-
-
-ME 36500        3       B+
-
-MUS 37800       3       A+
-
-MA 34100        3       B+
-
-ME 35400        3       B
-
-ME 35401        1       A+
-
-ME 37500        3       B
-
-MSE 23000       3       C
-
-REL 23100       3       B+
-
-VIP 27920       2       B+
-
-POL 23500	3	A
-
-ANTH 37900	3	A
-
-MA 41600	3	C+
-
-ME 47500	3	C+
-
-ME 31500	4	B
-
-ME 69420	16	A
+ME 80085        16      B+
